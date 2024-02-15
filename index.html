@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p class="output"></p>
+        <p>Enter your command:</p>
+        <ul>
+            <li>Sudo login: to login</li>
+            <li>sudo signup: to register</li>
+            <li>sudo nav: for navbar</li>
+            <li>Sudo Contact: for contacts</li>
+            <li>sudo cry: for tears</li>
+            <li>sudo root: for help -h</li>
+            <li>sudo clear: for clearance</li>
+        </ul>
+        <form action="#" id="commandForm">
+            <textarea name="command" id="command" cols="50" rows="30"></textarea>
+            <button type="submit" onclick="command()">Submit</button>
+        </form>
+        <div class="login">
+            <div class="signup__container">
+                <div class="signup__form-container"> 
+                    <div class="form">
+                        <h1>Welcome 👋🏼</h1>
+                        <small>Please login here</small>
+                        <form action="#">
+                            <label for="login-email">Email Address *</label>
+                            <input type="email" id="login-email" name="login-email">
+                            <label for="login-password">Password *</label>
+                            <input type="password" id="login-password" name="login-password">
+                            <button type="submit" class="btn form__btn">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="signup">
+            <div class="signup__container">
+                <div class="signup__form-container">
+                    <div class="form">
+                        <h1>Create Account 👋🏼</h1>
+                        <small>Please enter details</small>
+                        <form action="#">
+                            <label for="signup-name">Full Name *</label>
+                            <input type="text" id="signup-name" name="signup-name">
+                            <label for="signup-email">Email Address *</label>
+                            <input type="email" id="signup-email" name="signup-email">
+                            <label for="signup-password">Password *</label>
+                            <input type="password" id="signup-password" name="signup-password">
+                            <label for="confirm-password">Confirm Password *</label>
+                            <input type="password" id="confirm-password" name="confirm-password">
+                            <button type="submit" class="btn form__btn">Sign Up</button>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
